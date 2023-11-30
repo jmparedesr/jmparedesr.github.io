@@ -106,11 +106,20 @@
 </head>
   
    <body> 
-   <p><b><font size="+3">Demo Visual IVR - Grupo ITS / Five9</font></b></p>
+	   /** Load the Visual IVR container */
 
-	  <p><input type="submit" value="Enviar"></p>
+$.get("/<Path_To_File>/vivrContainer.html" + "?seconds=" +
 
-</form>
+(new Date()).getMilliseconds(),
+
+function(data) {IVRLaunch.layout = data;}
+
+);
+
+	<p><b><font size="+3">Demo Visual IVR - Grupo ITS / Five9</font></b></p>
+
+<a id="checkVIVR" class="btn btn-large btn-primary">Contact Customer Support</a>
+
    </body>   
 </html>
 
