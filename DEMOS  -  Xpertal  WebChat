@@ -1,0 +1,33 @@
+<html>
+
+<head>
+
+<script src="https://cdn.int2.us.five9nonprod.net/static/stable/chat/wrapper/index.js"></script>
+
+ 
+
+<title> DEMOS - Xpertal WebChat </title>
+
+</head>
+
+ 
+
+<body> 
+
+<script>
+  F9.Chat.Wrapper.init({
+    cdn: 'int2',
+    useBusinessHours: true,
+    languages: {"enabled":false,"defaultToBrowserLocale":false,"allowUnconfiguredLanguages":false,"languages":[{"label":"Spanish","code":"es","typeLang":"preferred","default":true}],"backgroundColor":"#65758e"},
+    l10n: {"es":{"captureFields":[{"k":"name","l":"Nombre","p":"Ingresa tu nombre..."},{"k":"email","l":"Email","p":"Ingresa tu nombre..."},{"k":"Question","l":"Pregunta","p":"¿En qué te puedo ayudar el día de hoy?"}]}},
+    prepopulatedFields: [{"k":"campaign","v":"DEMOS - Xpertal WebChat"}],
+    messenger: {"integrationId":"6352e63ee98c9800ff35fd4a","soundNotificationEnabled":true,"transcriptPrintingEnabled":false,"menuItems":{"imageUpload":true,"fileUpload":true,"shareLocation":true},"embedded":false,"businessName":"Xpertal","businessIconUrl":"https://openservice.mx/wp-content/uploads/2022/05/xpertal-2.png","browserStorage":"sessionStorage","fixedHeader":false,"displayStyle":"button","buttonIconUrl":"https://openservice.mx/wp-content/uploads/2022/05/xpertal-2.png","customColors":{"brandColor":"65758e","conversationColor":"0099ff","actionColor":"0099ff"}},
+    clearMessagesTimeout: 3
+  });
+  </script>
+
+ 
+
+</body>   
+
+</html>
