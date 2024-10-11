@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	 <title> Departure Transportation Confirmation
+
+  </title>
+	 </head>
+
+
+<p>&nbsp;</p>
+
+<table class="MsoNormalTable" style="width: 91.4%; background: white; mso-background-themecolor: background1; border-collapse: collapse; mso-yfti-tbllook: 1184; mso-table-lspace: 9.0pt; margin-left: 6.75pt; mso-table-rspace: 9.0pt; margin-right: 6.75pt; mso-table-anchor-vertical: paragraph; mso-table-anchor-horizontal: margin; mso-table-left: center; mso-table-top: -14.15pt; mso-padding-alt: 0in        0in 0in 0in;" border="0" width="91%" cellspacing="0" cellpadding="0" align="left">
+
+<tbody>
+
+<tr style="mso-yfti-irow: 0; mso-yfti-firstrow: yes; height: 44.05pt;">
+
+<td style="width: 689px; padding: 0.4in 0in 5.75pt; height: 44.05pt;">
+
+<p class="MsoNormal" style="text-align: center; mso-element: frame; mso-element-frame-hspace: 9.0pt; mso-element-wrap: around; mso-element-anchor-vertical: paragraph; mso-element-anchor-horizontal: margin; mso-element-left: center; mso-element-top: -14.15pt; mso-height-rule: exactly;" align="center"><a name="_Hlk51773160"></a><span style="font-size: 18.0pt; mso-ascii-font-family: Calibri; mso-ascii-theme-font: minor-latin; mso-hansi-font-family: Calibri; mso-hansi-theme-font: minor-latin; mso-bidi-font-family: Calibri; mso-bidi-theme-font: minor-latin; mso-no-proof: yes;"><img src=https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhsb8TLH5UV5b6mL0e9-ua1zekF3t27gGcKRNYrnnDgzYkctlTPXjjwcAcidJFZ9FgbgDuR0n6xRSP3DpoWWZOXKoUQsOMniNl-LCcWtOptEOPWG8r1TaRUcp21HSG78fY8kYOPzHmLbAp5CO4RZ_NU-bCyG69POjv_un8CMSPqerBQNy9RlbsGyduyhfo/s910/Banner%20Blast%20Right.png width="689" height="206" /></span></p>
+
+</td>
+
+</tr>
+
+<tr style="mso-yfti-irow: 1; mso-yfti-lastrow: yes; height: 37.6pt;">
+
+<td style="width: 688.078px; padding: 0in 0in 0in 0.7pt; height: 37.6pt;">
+
+<p class="MsoNormal" style="mso-element: frame; mso-element-frame-hspace: 9.0pt; mso-element-wrap: around; mso-element-anchor-vertical: paragraph; mso-element-anchor-horizontal: margin; mso-element-left: center; mso-element-top: -14.15pt; mso-height-rule: exactly;"><span style="mso-bookmark: _Hlk51773160;"><span style="font-size: 18.0pt; mso-ascii-font-family: Calibri; mso-ascii-theme-font: minor-latin; mso-hansi-font-family: Calibri; mso-hansi-theme-font: minor-latin; mso-bidi-font-family: Calibri; mso-bidi-theme-font: minor-latin;">&nbsp;</span></span></p>
+
+<div align="center">
+
+<table class="MsoTableGrid" style="border-collapse: collapse; border: none; height: 1060px; width: 663.906px;" border="0" cellspacing="0" cellpadding="0">
+
+<tbody>
+
+<tr style="mso-yfti-irow: 0; mso-yfti-firstrow: yes; mso-yfti-lastrow: yes; height: 9.55pt;">
+
+<td style="width: 646.906px; background: white; padding: 0in 5.4pt; height: 9.55pt; text-align: center;" valign="top">
+
+<p class="MsoNormal" style="text-align: center; mso-element: frame; mso-element-frame-hspace: 9.0pt; mso-element-wrap: around; mso-element-anchor-vertical: paragraph; mso-element-anchor-horizontal: margin; mso-element-left: center; mso-element-top: -14.15pt; mso-height-rule: exactly;" align="center"><span style="mso-bookmark: _Hlk51773160;"><strong><span style="font-size: 18.0pt; mso-ascii-font-family: Calibri; mso-ascii-theme-font: minor-latin; mso-fareast-font-family: 'Times                                New Roman'; mso-fareast-theme-font: minor-fareast; mso-hansi-font-family: Calibri; mso-hansi-theme-font: minor-latin; mso-bidi-font-family: Calibri; mso-bidi-theme-font: minor-latin; color: #00335f;">&nbsp;</span></strong></span></p>
+
+<h1 align="center"><span style="color: #00335f;"><strong>Welcome to Mexico!</strong></span></h1>
+
+<p>&nbsp;</p>
+
+<p><span style="font-size: 18.0pt; mso-ascii-font-family: Calibri; mso-ascii-theme-font: minor-latin; mso-fareast-font-family: 'Times                              New Roman'; mso-fareast-theme-font: minor-fareast; mso-hansi-font-family: Calibri; mso-hansi-theme-font: minor-latin; mso-bidi-font-family: Calibri; mso-bidi-theme-font: minor-latin; color: #00355f;">Dear {{Name}},</span></p>
+
+<p>&nbsp;</p>
+
+<p style="text-align: left;"><span style="font-size: 18pt;"><span style="color: #00355f;">Thank you for your confidence, we are committed to make your vacation time even better.</span></span></p>
+
+<p style="text-align: left;"><span style="font-size: 18pt;"><span style="color: #00355f;">Your transportation from <strong>{{hotel}}</strong> to Cancun International Airport is confirmed no need to call us to reconfirm this reservation. This is the information we have about your departure flight.</span></span></p>
+
+<p style="text-align: left;">&nbsp;</p>
+
+<p style="text-align: left;"><span style="font-size: 18pt;"><span style="color: #00355f;">Departure Flight Number:<strong>{{flight}}</strong></span></span></p>
+
+<p style="text-align: left;"><span style="font-size: 18pt;"><span style="color: #00355f;">Departure Time:<strong>{{departute}}</strong></span></span></p>
+
+<p style="text-align: left;"><span style="font-size: 18pt;"><span style="color: #00355f;">Departure Date:<strong>{{date}}</strong></span></span></p>
+
+<p style="text-align: left;"><span style="font-size: 18pt;"><span style="color: #00355f;">Hotel Name:<strong>{{hotel}}</strong></span></span></p>
+
+<p style="text-align: left;">&nbsp;</p>
+
+<p style="text-align: left;"><span style="font-size: 18pt;"><span style="color: #00355f;">The pick up time for your departure service on <strong>{{date}}</strong> will be at <strong>{{pick up}}.&nbsp;</strong></span></span><span style="font-size: 18pt;"><span style="color: #00355f;">Please make sure all the information is accurate and let us know if we need to make any changes<strong>.</strong></span></span>&nbsp;</p>
+
+<p style="text-align: left;">&nbsp;</p>
+
+<p style="text-align: left;"><span style="font-size: 18pt;"><span style="color: #00355f;"><strong>IMPORTANT:</strong> If you need to modify your booking please contact us immediately on the following numbers, changes need to be updated at least 48 hours before the service date:</span></span></p>
+
+<p style="text-align: left;">&nbsp;</p>
+
+<p style="text-align: left;"><span style="font-size: 18pt;"><strong><span style="color: #00355f;">From USA &amp; CAN +1 855 570 2073</span></strong></span></p>
+
+<p style="text-align: left;"><span style="font-size: 18pt;"><strong><span style="color: #00355f;">From MEX +52 998 281 9016</span></strong></span></p>
+
+<p style="text-align: left;"><span style="font-size: 18pt;"><strong><span style="color: #00355f;">Whatsapp +52 998 366 0423</span></strong></span></p>
+
+<p style="text-align: left;">&nbsp;</p>
+
+<p style="text-align: left;">&nbsp;</p>
+
+<p style="text-align: left;"><span style="font-size: 18pt;"><strong><span style="color: #00355f;">Please remember:</span></strong></span></p>
+
+<ul>
+
+<li style="text-align: left;"><span style="font-size: 18pt;"><span style="color: #00355f;">Show your confirmation and photo ID.</span></span></li>
+
+<li style="text-align: left;"><span style="font-size: 18pt;"><span style="color: #00355f;">Be ready 15 minutes before the scheduled time.</span></span></li>
+
+<li style="text-align: left;"><span style="font-size: 18pt;"><span style="color: #00355f;">Your driver will meet you outside of your hotel entrance, calling you by your name.</span></span></li>
+
+<li style="text-align: left;"><span style="font-size: 18pt;"><span style="color: #00355f;">The driver cannot wait for more than 5 minutes.</span></span></li>
+
+<li style="text-align: left;"><span style="color: #00355f;"><span style="font-size: 24px;">No-shows are not refundable.</span></span></li>
+
+</ul>
+
+<p style="text-align: center;">&nbsp;</p>
+
+<p style="text-align: center;">&nbsp;</p>
+
+<p style="text-align: center;"><span style="font-size: 18.0pt; mso-ascii-font-family: Calibri; mso-ascii-theme-font: minor-latin; mso-fareast-font-family: 'Times                              New Roman'; mso-fareast-theme-font: minor-fareast; mso-hansi-font-family: Calibri; mso-hansi-theme-font: minor-latin; mso-bidi-font-family: Calibri; mso-bidi-theme-font: minor-latin; color: #00355f;"><img src=https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgXDMQACAbFtwtM3KN3X8FN6lM7clLjq4JJmLH6q1pLKsYjR_hf2RqPNaQNUOoH07U_2-NrBzHtd3VF_mL7OTv6GqkK_50d0XXI6QCMth00-3SYC5tEeSogc1mAJS0hSoUo72-j0M1gy9PVaZgNqN4JT88EYLZSnPIVAm6zCvsORIqqZ3x5bshcusUrPeU/s2737/In%20Market%20agent.png alt="" width="444" height="431" /></span></p>
+
+<p style="text-align: center;"><span style="font-size: 18pt;"><strong><span style="color: #00355f;">Take advantage of your MTS benefits:</span></strong></span></p>
+
+<p style="text-align: center;">&nbsp;</p>
+
+<ul>
+
+<li style="text-align: left;"><span style="font-size: 18.0pt; mso-ascii-font-family: Calibri; mso-ascii-theme-font: minor-latin; mso-fareast-font-family: 'Times                              New Roman'; mso-fareast-theme-font: minor-fareast; mso-hansi-font-family: Calibri; mso-hansi-theme-font: minor-latin; mso-bidi-font-family: Calibri; mso-bidi-theme-font: minor-latin; color: #00355f;">Exclusive deals on the best attractions in the area.</span></li>
+
+<li style="text-align: left;"><span style="font-size: 18.0pt; mso-ascii-font-family: Calibri; mso-ascii-theme-font: minor-latin; mso-fareast-font-family: 'Times                              New Roman'; mso-fareast-theme-font: minor-fareast; mso-hansi-font-family: Calibri; mso-hansi-theme-font: minor-latin; mso-bidi-font-family: Calibri; mso-bidi-theme-font: minor-latin; color: #00355f;">Easy assistance from a local based in Cancun.</span></li>
+
+<li style="text-align: left;"><span style="font-size: 18.0pt; mso-ascii-font-family: Calibri; mso-ascii-theme-font: minor-latin; mso-fareast-font-family: 'Times                              New Roman'; mso-fareast-theme-font: minor-fareast; mso-hansi-font-family: Calibri; mso-hansi-theme-font: minor-latin; mso-bidi-font-family: Calibri; mso-bidi-theme-font: minor-latin; color: #00355f;">Full refund in case of cancelation due to bad weather conditions.</span></li>
+
+</ul>
+
+<p style="text-align: left;">&nbsp;&nbsp;</p>
+
+<p style="text-align: left;"><span style="font-size: 19.0pt; mso-ascii-font-family: Calibri; mso-ascii-theme-font: minor-latin; mso-fareast-font-family: 'Times                              New Roman'; mso-fareast-theme-font: minor-fareast; mso-hansi-font-family: Calibri; mso-hansi-theme-font: minor-latin; mso-bidi-font-family: Calibri; mso-bidi-theme-font: minor-latin; color: #00355f;">This is a list of our top recommendations with pre-arrival discounts up to 30% off</span></p>
+
+<p style="text-align: left;">&nbsp;</p>
+
+<p style="text-align: left;" align="justify"><span style="color: #00335f;">&nbsp;&nbsp;<a href=https://youtu.be/ODNpMfwBOxs?si=uL0BBEV7fF0mYYm3><img style="display: block; margin-left: auto; margin-right: auto;" src=https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgDYXjM_mdbGHIvlo0vpSiz6fTc3GfCr0sZq-9L3iNtJyJu8Ta8q5Dj-GQ-jwGKvILrUPY1BzCecMz532hJI6L_dHhhfiGG9wMyBLzLQowHMMY0bqM531vfN756seSD7hJ37GJXwrmMW9Vus6SpWwtqvuOYt7TByBggF4Dw8nzE-MBz2QRAL446ZTmcEXk/s1920/Banners%20Call%20Promociones%20Chichen%20itza.jpg alt="" width="650&quot;" height="384" /></a></span><br /> <a href=https://youtu.be/HiEchjg6L54?si=nT1cHCi_g2p1fzXa><img style="display: block; margin-left: auto; margin-right: auto;" src=https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhqD5iIM11UmJCGQqn04dtLHWir7nyTJugJtj14eVS6Md6OEBjpCQJzHEIE5t4JHbgb13JFYco-iQfNugiA7hrP4rjQN8TtxoKiOEFw-FOZGU98DjADiqZCZQYiM3soztgYJxAVdeeR4qYvvCEr1cBmO-LF2ZyhWQWBSgtTvq2aR2s2Hqt2tKAVvYZ9m2w/s1920/Banners%20Call%20Promociones%20Cancun%20sailing.jpg alt="" width="650" height="384" /><br /> </a><a href=https://youtu.be/QugzFCukBZY><img style="display: block; margin-left: auto; margin-right: auto;" src=https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhzGhqkDdr-M0NlBvVgDnV6oirq6mDQtLZ3dNKLY3yfS3JTw1WJLsbmAXFMk2I4AJlZBajqTHW9g2IoOqYJzXqeQN1JUhyphenhyphenW_9sYWhC7SrlP57sewogsOUudBdzdhTpGcG3YheVLXYBh3uOW2bbUA07mt2Lz_RofZeX5SYTciJmFQgZxEHLhubJkJxbhsqA/s1920/Banners%20Call%20Promociones%20Tulum.jpg alt="" width="650" height="384" /><br /> </a><a href=https://youtu.be/MsXwcu-tKEw?si=vexf0eOo8JahbZed><img style="display: block; margin-left: auto; margin-right: auto;" src=https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgCLyBaOhTiAdeRPbsMEiDAe6Z8SzqkFuX59VwrSynHX-t2UKH5GoSkLu3f_ellMd8C6Dq04_e8l1x-1IRx0VlNz90gIiSqJBhc-2GHLLQRikQqgBuOkrc-uWxDwESZh0tJP-kjb7whTgF467k7FmqAWOlkrlt9SDq6z7TvByXyHOEEOwJaJmiUOQDvEWc/s1920/Banners%20Call%20Promociones%20Cirque%20Du%20Solei%202.jpg alt="" width="650" height="384" /><br /></a><a href=https://youtu.be/5wZ1OChYNRY?si=HZl5auqlC_fhUNX7><img style="display: block; margin-left: auto; margin-right: auto;" src=https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh9rzu4z2c9OFtUz99YN8euSHFbjey2F7K1twPG7dSr-jrsk00WVSEbh3wRvBTGFy34VVGcHxbiXcqRoOti3khdehwLIchpoyYM1vykWaXUwK7UTNhwKM3fWl6azB6S69QJOMUe3kfxRoMY3MHcaJInXYKlMd9UHzHrvyGDX-DlBOepDOHn4bZBcf-UfFM/s1920/Banners%20Call%20Promociones%20Xelha.jpg alt="" width="650" height="384" /><br /></a><a href=https://youtu.be/pnpXHKwiZ4o?si=eQeI_2Iixh-FOFyd><img style="display: block; margin-left: auto; margin-right: auto;" src=https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhdnXUoDI6BKtvv_s3i_vK1SAtMBBIKOTW28DkF7tle5QNEs2SYwcm1h_yLqE29EadOCa9xozUPkc8Lv_M1I2ji8DTmFarH5k39D0NtD98gN7s2pqQg8LaORcKlIbU67Pc_8MOqan-A8uJ_aCCiHS6e4KlLBgCXZUZEzbHnM_SyTdF4cOaNWOSM4jgJMCg/s1920/Banners%20Call%20Promociones%20Xcaret%2025%25.jpg alt="" width="650" height="384" /></a></p>
+
+<p style="text-align: left;"><a href=https://youtu.be/KB-DWmAYYKY?si=iFSdPATqZtjywNQ5><img style="display: block; margin-left: auto; margin-right: auto;" src=https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgxgpnOdC6sM2qSk7yxpPddZmDyBz-ORSq0BqcCCe4Cwd19tEhfBrXct8RLnCcRmmgPb63eqG2fXNEoMigOVrUT-fma37ygr1ExhCKl_TdnjKQDTPOqTZTA6ghXcaMU_kElbOBaIzVWYX5SnY-U_fsAQL07RfJYVZ2BkyDfGdiUp-59I3boL-RiLGb3Y-A/s1920/Banners%20Call%20Promociones%20Xplor.jpg alt="" width="650" height="384" /><br /></a><a href=https://youtu.be/CInM2y5xB4E?si=HLPYjm6P6mobnPil><img style="display: block; margin-left: auto; margin-right: auto;" src=https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiIqsHKlofdLscyvtdYdlcMnWJR_glgUl7DznZNCAU54E7PV-8Y365AQrnF20xvAe9QEI32eK99lA7lZobESJJfIRr8DxFI-Kl6TicC6W6sLPiEoFcJYsDEJPziZAmHBb7sPmE3rAYZfk6VdsKTm1xzWeFQieR1Gr_m_rESGTKPNZ0UqOSCSpXWCmhPl6U/s1920/Banners%20Call%20Promociones%20Cancun%20adventures.jpg alt="" width="650" height="384" /></a></p>
+
+<p style="text-align: left;"><a href=https://youtu.be/iNK2PU-2MV4?si=OqLxXn5aM8HYolfe><img style="display: block; margin-left: auto; margin-right: auto;" src=https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjp9A_5woa85vwXTR2TNrP6AeAeWv7xjdFrfVRFyxthqSH8Uh2lFKvD_M0xkSrodvS6vAtzZmtRVYvLxPeayfLiqahOg5rrqsk9G0px_Qa9TMHEh5D8RFt59XnIYx8kuHg35GFSOxfJWDzVt91rXwJ81i6tt9WJ9UScbq1M0NjkScIbqkLmMLABL1xn3hQ/s1920/Banners%20Call%20Promociones%20Delphinus.jpg alt="" width="650" height="384" /></a></p>
+
+<p style="text-align: left;"><a href=https://youtu.be/7-QL0-77JHg?si=SW2rgGfjIztZk6vo><img style="display: block; margin-left: auto; margin-right: auto;" src=https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj6dJqbe8Bd9KvrMQYSMeBVfj3pQnQ-iD4628qsxGw1K6PLSGCP-iu9_8lpIuQLUKKAGnHBUPIRvttoiYvPc5Tvy2lgZev4KdBzYibzmV2qyPQ95ygLJMsua7PIumQmY0-eOIaMATXIe2vWBz_t3qcdT1IbM6cFsfCHVckdX5qhLnNmnRr4ictzf6w9-W0/s1920/Banners%20Call%20Promociones%20Xoximilco.jpg alt="" width="650" height="384" /></a></p>
+
+<p style="text-align: left;"><a href=https://youtu.be/g2LRjo-6I-E?si=zMxS5jM6qNKb_hBM><img style="display: block; margin-left: auto; margin-right: auto;" src=https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhDaljokVkQ1QTu5mermDafdqENs-4ce-mQL60Hifb-F-xp_8ZnaDw0Tb9auLcxff9iQxM9qlnpExTO1VsHtlR8MhK4B5jQQr4MP7_noT0yYWBXQxcNogsdaf9wkg59BXN5tie3frVKO5qUs5Xl_xhQLrWa5Llz19w_dBW5GUlEYkG8f5W5uWV2RlBOa48/s1920/Banners%20Call%20Promociones%20Captain%20hook%202.jpg alt="" width="650" height="384" /><br /></a><a style="text-align: left;">&nbsp;</a></p>
+
+<p style="text-align: left;">&nbsp;</p>
+
+<h1 style="text-align: center;"><span style="font-size: 19.0pt; mso-ascii-font-family: Calibri; mso-ascii-theme-font: minor-latin; mso-fareast-font-family: 'Times                              New Roman'; mso-fareast-theme-font: minor-fareast; mso-hansi-font-family: Calibri; mso-hansi-theme-font: minor-latin; mso-bidi-font-family: Calibri; mso-bidi-theme-font: minor-latin; color: #00355f;">&nbsp;</span></h1>
+
+<h1 style="text-align: center;"><span style="font-size: 20.0pt; mso-ascii-font-family: Calibri; mso-ascii-theme-font: minor-latin; mso-fareast-font-family: 'Times                              New Roman'; mso-fareast-theme-font: minor-fareast; mso-hansi-font-family: Calibri; mso-hansi-theme-font: minor-latin; mso-bidi-font-family: Calibri; mso-bidi-theme-font: minor-latin; color: #00355f;"><strong>On behalf of our whole team in Mexico, we look forward to welcoming you!</strong>&nbsp;</span></h1>
+
+<p style="text-align: center;" align="justify"><span style="color: #333399;">&nbsp;</span></p>
+
+<p style="text-align: center;" align="justify"><span style="color: #333399;">&nbsp;</span></p>
+
+<p style="text-align: center;" align="justify"><span style="color: #00335f;"><strong>&nbsp;&nbsp;</strong></span><br /><span style="color: #00335f;"><strong>Virtual Concierge</strong></span><br /><span style="color: #00335f;">&nbsp;</span><br /><br /></p>
+
+<p style="text-align: left;"><img style="display: block; margin-left: auto; margin-right: auto;" src=https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh5UZnKyZQ9ETtgulViEUkmxgkO_I3x6_mY42LhdODwS8CQskwqbY6XcTWgRPLs7i45QLeRcStNB5pk8Nd3A7aEGGpqH3c6SKTyriRcE8ka4eld8pl-y65nLBZ051Zmplbc6pivUEIdCfEudrszj6RczkCyAwum9AFltIqeJSkBj9tZ_gpXHWLf_rdjTww/s363/Logo.png alt="" width="250" height="232" /></p>
+
+<p class="MsoNormal" style="text-align: center; mso-element: frame; mso-element-frame-hspace: 9.0pt; mso-element-wrap: around; mso-element-anchor-vertical: paragraph; mso-element-anchor-horizontal: margin; mso-element-left: center; mso-element-top: -14.15pt; mso-height-rule: exactly;" align="center">&nbsp;</p>
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+   
+</html>
