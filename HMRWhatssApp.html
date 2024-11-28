@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	
+<script src="https://app.five9.com/consoles/SocialWidget/five9-social-widget.min.js"></script>
+      
+ <title> HMR - WhatsApp </title>
+</head>
+  
+ <body> 
+
+<script>
+var options = {
+	"rootUrl": "https://app.five9.com/consoles/",
+	"type": "chat",
+	"title": "HMR - WhatsApp",
+	"tenant": "Marquis Hotels",
+	"profiles": "HMR - WhatsApp",
+	"showProfiles": true,
+	"autostart": true,
+	"theme": "lime-time.css",
+	"surveyOptions": {
+		"showComment": true,
+		"requireComment": false
+	},
+	"fields": {
+		"name": {
+			"value": "",
+			"show": true,
+			"label": "Name"
+		},
+		"email": {
+			"value": "",
+			"show": true,
+			"label": "Email"
+		},
+		"UserLocale": {
+			"value": "es",
+			"show": false
+		}
+	},
+	"playSoundOnMessage": true,
+	"allowCustomerToControlSoundPlay": false,
+	"showEmailButton": true,
+	"hideDuringAfterHours": false,
+	"useBusinessHours": true,
+	"showPrintButton": false,
+	"allowUsabilityMenu": false,
+	"enableCallback": false,
+	"callbackList": "",
+	"allowRequestLiveAgent": false
+};
+Five9SocialWidget.addWidget(options);
+
+</script>
+
+</body>   
+</html>
