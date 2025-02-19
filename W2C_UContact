@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Llamada</title>
+</head>
+<body>
+    <form id="callForm">
+        <label for="telefono">Teléfono:</label>
+        <input type="text" id="telefono" name="telefono" required>
+        <button type="submit">Enviar</button>
+    </form>
+
+    <script>
+        document.getElementById("callForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            
+            let telefono = document.getElementById("telefono").value;
+            let data = new URLSearchParams();
+            
+            let callObject = {
+                "calldate": null,
+                "campaign": "Power_Ventas<-",
+                "destination": telefono,
+                "alternatives": "",
+                "agent": "",
+                "data": "idcustomer=7:name=Seba",
+                "source": "source",
+                "bulk": false,
+                "automatic": true
+            };
+            
+            data.append("call", JSON.stringify(callObject));
+            
+            fetch("https://grupoits.ucontactcloud.com/Integra/resources/Dialers/DialerTask", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/x-www-form-urlencoded"
+                },
+                body: data
+            })
+            .then(response => response.text())
+            .then(result => alert("Respuesta de la API: " + result))
+            .catch(error => console.error("Error:", error));
+        });
+    </script>
+</body>
+</html>
