@@ -8,51 +8,18 @@
 </head>
   
  <body> 
+<script src="https://cdn.prod.us.five9.net/static/stable/chat/wrapper/index.js"></script>
 
 <script>
-var options = {
-	"rootUrl": "https://app.five9.com/consoles/", 
-	"type": "chat",
-	"title": "PDC - WhatsApp Interna",
-	"tenant": "Grupo PDC",
-	"profiles": "Whatsapp Linea Interna",
-	"showProfiles": true,
-	"autostart": true,
-	"theme": "lime-time.css",
-	"surveyOptions": {
-		"showComment": true,
-		"requireComment": false
-	},
-	"fields": {
-		"name": {
-			"value": "",
-			"show": true,
-			"label": "Name"
-		},
-		"email": {
-			"value": "",
-			"show": true,
-			"label": "Email"
-		},
-		"UserLocale": {
-			"value": "es",
-			"show": false
-		}
-	},
-	"playSoundOnMessage": true,
-	"allowCustomerToControlSoundPlay": false,
-	"showEmailButton": true,
-	"hideDuringAfterHours": false,
-	"useBusinessHours": true,
-	"showPrintButton": false,
-	"allowUsabilityMenu": false,
-	"enableCallback": false,
-	"callbackList": "",
-	"allowRequestLiveAgent": false
-};
-Five9SocialWidget.addWidget(options);
-
-</script>
-
+  F9.Chat.Wrapper.init({
+    cdn: 'prod',
+    useBusinessHours: true,
+    languages: {"enabled":false,"backgroundColor":"#65758e"},
+    l10n: {"en":{"messenger":{"customText":{}},"systemMessages":{"conversationCreated":"Gracias por contactarnos","participantAccepted":"Tu has sido trasnferido con uno de nuestros agentes","participantJoined":"Un participante se ha unido al chat","participantLeft":"Un participante ha dejado la conversación","transferredToParticipant":"El chat ha sido transferido a {name}.","transferredToGroup":"That chat has been transferred to group {group}.","conversationTerminated":"La conversación ha finalizado "},"captureFields":[{"k":"name","l":"Nombre","p":"Enter your name..."},{"k":"email","l":"Email ","p":"Enter your email..."},{"k":"Question","l":"Pregunta","p":"What can we help you with today?"}]}},
+    prepopulatedFields: [{"k":"campaign","v":"Whatsapp_interna"}],
+    messenger: {"integrationId":"a94dc5d3-9b94-4f88-bf01-be79e5840de6","soundNotificationEnabled":true,"transcriptPrintingEnabled":false,"menuItems":{"imageUpload":true,"fileUpload":true,"shareLocation":true},"embedded":false,"setViewportScale":false,"browserStorage":"sessionStorage","hideWidgetAfterBusinessHours":false,"openLinkInSameTab":false,"scheduleCallback":{"isCallbackEnabled":false,"requestCallbackList":"","customConfirmationMessage":"We will call you as soon as we can at [PHONE]","web2CampaignAPIHost":""},"fixedHeader":false,"displayStyle":"button","customColors":{"brandColor":"65758e","conversationColor":"4B5DFF","actionColor":"4B5DFF"},"carouselType":"default"},
+    clearMessagesTimeout: 3
+  });
+  </script>
 </body>   
 </html>
