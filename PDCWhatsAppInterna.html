@@ -2,22 +2,20 @@
 <html>
 	<head>
 	
-<script src="https://app.five9.com/consoles/SocialWidget/five9-social-widget.min.js"></script>
+<script src="https://cdn.prod.us.five9.net/static/stable/chat/wrapper/index.js"></script>
       
- <title> PDC - WhatsApp </title>
+ <title> PDC - WhatsApp Línea Interna </title>
 </head>
   
  <body> 
-<script src="https://cdn.prod.us.five9.net/static/stable/chat/wrapper/index.js"></script>
-
 <script>
   F9.Chat.Wrapper.init({
     cdn: 'prod',
     useBusinessHours: true,
-    languages: {"enabled":false,"backgroundColor":"#65758e"},
-    l10n: {"en":{"messenger":{"customText":{}},"systemMessages":{"conversationCreated":"Gracias por contactarnos","participantAccepted":"Tu has sido trasnferido con uno de nuestros agentes","participantJoined":"Un participante se ha unido al chat","participantLeft":"Un participante ha dejado la conversación","transferredToParticipant":"El chat ha sido transferido a {name}.","transferredToGroup":"That chat has been transferred to group {group}.","conversationTerminated":"La conversación ha finalizado "},"captureFields":[{"k":"name","l":"Nombre","p":"Enter your name..."},{"k":"email","l":"Email ","p":"Enter your email..."},{"k":"Question","l":"Pregunta","p":"What can we help you with today?"}]}},
+    languages: {"enabled":false,"backgroundColor":"#3000ff"},
+    l10n: {"en":{"messenger":{"customText":{}},"systemMessages":{"conversationCreated":"Gracias por contactarnos","participantAccepted":"Tu has sido trasnferido con uno de nuestros agentes ..","participantJoined":"Un participante se ha unido al chat.","participantLeft":"Un participante ha dejado el chat.","transferredToParticipant":"El chat ha sido transferido a {name}.","transferredToGroup":"El chat ha sido trasnferido al grupo {group}.","conversationTerminated":"La conversación ha finalizado."},"captureFields":[{"k":"name","l":"Nombre","p":"Ingresa tu nombre..."},{"k":"email","l":"Email ","p":"Ingresa tu email..."},{"k":"Question","l":"Pregunta","p":"¿Cómo podemos ayudarte?"}]}},
     prepopulatedFields: [{"k":"campaign","v":"Whatsapp_interna"}],
-    messenger: {"integrationId":"a94dc5d3-9b94-4f88-bf01-be79e5840de6","soundNotificationEnabled":true,"transcriptPrintingEnabled":false,"menuItems":{"imageUpload":true,"fileUpload":true,"shareLocation":true},"embedded":false,"setViewportScale":false,"browserStorage":"sessionStorage","hideWidgetAfterBusinessHours":false,"openLinkInSameTab":false,"scheduleCallback":{"isCallbackEnabled":false,"requestCallbackList":"","customConfirmationMessage":"We will call you as soon as we can at [PHONE]","web2CampaignAPIHost":""},"fixedHeader":false,"displayStyle":"button","customColors":{"brandColor":"65758e","conversationColor":"4B5DFF","actionColor":"4B5DFF"},"carouselType":"default"},
+    messenger: {"integrationId":"a94dc5d3-9b94-4f88-bf01-be79e5840de6","soundNotificationEnabled":true,"transcriptPrintingEnabled":false,"menuItems":{"imageUpload":true,"fileUpload":true,"shareLocation":true},"embedded":false,"setViewportScale":false,"businessName":"WhatsApp Linea Interna ","businessIconUrl":"https://grupopdc.com/wp-content/uploads/2024/01/MENU_logo-PDC.svg","browserStorage":"sessionStorage","hideWidgetAfterBusinessHours":false,"openLinkInSameTab":false,"scheduleCallback":{"isCallbackEnabled":false,"requestCallbackList":"","customConfirmationMessage":"We will call you as soon as we can at [PHONE]","web2CampaignAPIHost":""},"fixedHeader":false,"displayStyle":"button","customColors":{"brandColor":"3000ff","conversationColor":"006aff","actionColor":"00b8ff"},"carouselType":"default"},
     clearMessagesTimeout: 3
   });
   </script>
