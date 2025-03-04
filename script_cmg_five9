@@ -1,0 +1,299 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+  <html>
+  <head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Agent-script</title>
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <style>
+    .ttable, th, td{
+    border: none;
+    }
+
+	.table, .thl, .tdl{
+    border: 2px solid black;
+    }
+
+	.ltable2 {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    margin-bottom: 1em;
+    border: none;
+    }
+
+   .lcolumn-1 {
+   background-color: gray !important;
+   color: #fff;
+   width: 200px;
+   font-weight: 700;
+   padding: 8px;
+   }
+
+    .table2 {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    margin-bottom: 1em;
+    border: none;
+    }
+
+    .column-1 {
+    background-color: #212121 !important;
+    color: #fff;
+    width: 75px;
+    font-weight: 700;
+    padding: 8px;
+    }
+
+    .column-2 {
+    background-color: #e6e6e6 !important;
+    color: #000000;
+    width: 150px;
+    font-weight: 700;
+    }
+
+    .column-2:hover {
+    background-color: #ffffff !important;
+    }
+
+    .row {
+    color: #5a5d60;
+    font-family: "Lato", sans-serif;
+    font-size: 14px;
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1.7857;
+    border-bottom: 1px solid #ddd;
+    }
+    .head-img {
+      object-fit: contain;
+      width: 100%;
+      max-width: 300px;
+      max-height: 170px;
+    }
+
+  .title{
+      font-family: Arial;
+      color: #000000;
+      text-align: center;
+  }
+  .tabContainer{
+      width: 100%;
+      height: 50%;
+  }
+  .tabContainer .buttonContainer{
+      height: 15%;
+  }
+  .tabContainer .buttonContainer button{
+      width: 20%;
+      height: 100%;
+      float: left;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      padding: 10px;
+      font-family: sans-serif;
+      font-size: 18px;
+      background-color: #eeeeee;
+  }
+  .tabContainer .buttonContainer button:hover{
+      background-color: #d7d4d4;
+  }
+  .tabContainer .tabPanel{
+      height: 85%;
+      background-color: none !important;
+      color: white;
+      text-align: center;
+      padding-top: 10px;
+      box-sizing: border-box;
+      font-family: sans-serif;
+      font-size: 22px;
+      display: none;
+  }
+
+</style>
+
+</head>
+<body style="padding: 20px; background: #ffffff">
+
+<table class="table2"><tbody>
+<tr class="row">
+<td style="height: 170px;background-color: #ffffff;text-align: center">
+<img class="head-img" src="https://five9qp.com/wp-content/uploads/2020/12/Five9-Logo-black.png" valign="top" align="center">
+</td>
+<td style="background-color: #ffffff;text-align: center"><h2><font color="#5fd60a" size="9" face="Arial">Llamada Marcador Aut&oacute;matico</font><br></h2></td>
+<td valign="center" align="center"><h3><font face="Arial">
+Hola mi nombre es <font color="#82050b">@Agent.full_name@ </font>de Kubo Financiero, &iquest;C&oacute;mo te puedo ayudar?<br>
+&iquest;Su nombre es <font color="#82050b">@Customer.first_name@ @Customer.last_name@?<br></h3>
+</td>
+</tr>
+</tbody></table>
+
+<div class="tabContainer">
+    <div class="buttonContainer">
+        <button onclick="showPanel(0,'#212121')">Informaci&oacute;n del Cliente</button>
+        <button onclick="showPanel(1,'#212121')">Datos de la interacci&oacute;n</button>
+                       <button onclick="showPanel(2,'#212121')">&Uacute;ltima interacci&oacute;n</button>
+       <button onclick="showPanel(3,'#212121')">Google Drive</button>
+        <button onclick="showPanel(4,'#212121')">P&aacute;gina de ayuda</button>
+		
+    </div>
+
+<div class="tabPanel">
+    <table class="table2">
+    <tbody>
+    <tr class="row">
+    <td class="column-1">Nombre del Cliente</td>
+    <td class="column-2">@Customer.first_name@ @Customer.last_name@</td>
+    </tr>
+    <tr class="row">
+    <td class="column-1">Id de Prospecto</td>
+    <td class="column-2">@Customer.prospect_id@</td>
+    </tr>
+    <tr class="row">
+    <td class="column-1">Cr&eacute;dito</td>
+    <td class="column-2">@Customer.Cr?dito@</td>
+    </tr>
+    <tr class="row">
+    <td class="column-1">Tel&eacute;fono</td>
+    <td class="column-2">@Customer.number1@</td>
+    </tr>
+    <tr class="row">
+    <td class="column-1">Email</td>
+    <td class="column-2">@Customer.Correo electr?nico@</td>
+    </tr>
+	<tr class="row">
+    <td class="column-1">Usuario Asignado</td>
+    <td class="column-2">@Customer.user_name@</td>
+    </tr>
+    </tbody>
+    </table>
+  </div>
+
+<div class="tabPanel">
+    <table class="table2">
+    <tbody>
+    <tr class="row">
+    <td class="column-1">Skill</td>
+    <td class="column-2">@Call.skill_name@</td>
+    </tr>
+    <tr class="row">
+    <td class="column-1">Num. de Campa&ntilde;a</td>
+    <td class="column-2">@Call.ANI@</td>
+    </tr>
+    <tr class="row">
+    <td class="column-1">N&uacute;mero del Cliente</td>
+    <td class="column-2">@Call.DNIS@</td>
+    </tr>
+    <tr class="row">
+    <td class="column-1">Nombre de Campa&ntilde;a</td>
+    <td class="column-2">@Call.campaign_name@</td>
+    </tr>
+  
+   
+		</tbody>
+    </table>
+</div>
+
+<div class="tabPanel">
+    <table class="table2">
+    <tbody>
+			<tr class="row">
+			<td class="column-1">&Uacute;ltima Campa&ntilde;a</td>
+			<td class="column-2">@Customer.?ltima Campa?a@</td>
+			</tr>
+			<tr class="row">
+			<td class="column-1">&Uacute;ltimo Agente</td>
+			<td class="column-2">@Customer.Agent@</td>
+			</tr>
+			<tr class="row">
+			<td class="column-1">&Uacute;ltima Disposici&oacute;n</td>
+			<td class="column-2">@Customer.?ltima Disposici?n@</td>
+			</tr>
+			
+		</tbody>
+		</table>
+</div>
+
+<div class="tabPanel">
+<br><br>
+<iframe width="1500" height="815" src="https://docs.google.com/spreadsheets/d/1j5_N7QoM9WG7KQefo2ykXAggvWF8WeztlaRTdlzwrp0/edit?usp=sharing" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<br><br>
+</div>
+
+<div class="tabPanel">
+<br><br>
+<iframe width="1500" height="815" src="https://www.kubofinanciero.com" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<br><br>
+</div>
+
+<script>
+var tabButtons=document.querySelectorAll(".tabContainer .buttonContainer button");
+var tabPanels=document.querySelectorAll(".tabContainer  .tabPanel");
+
+function showPanel(panelIndex,colorCode) {
+    tabButtons.forEach(function(node){
+        node.style.backgroundColor="";
+        node.style.color="";
+    });
+    tabButtons[panelIndex].style.backgroundColor=colorCode;
+    tabButtons[panelIndex].style.color="white";
+    tabPanels.forEach(function(node){
+        node.style.display="none";
+    });
+    tabPanels[panelIndex].style.display="block";
+}
+showPanel(0,'#212121');
+</script>
+<script>
+
+function json2table(json, classes) {
+var cols = Object.keys(json[0]);
+
+var headerRow = '';
+var bodyRows = '';
+
+classes = classes || '';
+
+function capitalizeFirstLetter(string) {
+  return string.charAt(0).toUpperCase() + string.slice(1);
+}
+
+cols.map(function(col) {
+  headerRow += '<th class="thl">' + capitalizeFirstLetter(col) + '</th>';
+});
+
+json.map(function(row) {
+  bodyRows += '<tr>';
+
+  cols.map(function(colName) {
+    bodyRows += '<td class="lcolumn-1 tdl">' + row[colName] + '</td>';
+  })
+
+  bodyRows += '</tr>';
+});
+
+return '<table class="ltable2' + classes + '"><thead><tr class="row">' + headerRow + '</tr></thead><tbody>' + bodyRows + '</tbody></table>';
+}
+
+var defaultData = [
+@__SCOPS_Lucency__.qpVariables@
+];
+
+document.getElementById('tableGoesHere').innerHTML = json2table(defaultData, 'table');
+
+var dom = {
+data: document.getElementById('data'),
+table: document.getElementById('tableGoesHere'),
+};
+
+dom.data.value = JSON.stringify(defaultData);
+dom.data.addEventListener('input', function() {
+dom.table.innerHTML = json2table(JSON.parse(dom.data.value), 'table');
+});
+	// Hide the row if a cell is empty - BR
+$("tr").not(":has(td:nth-child(2):not(:empty))").hide();
+</script>
+
+</body>
+</html>
