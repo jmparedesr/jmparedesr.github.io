@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Servicios de Consultoría - Stefanini</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+        .header img {
+            height: 60px;
+        }
+        h2 {
+            margin-bottom: 20px;
+            color: #003366;
+        }
+        form label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        form input, form select, form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        form button {
+            background-color: #003366;
+            color: #fff;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        form button:hover {
+            background-color: #0055a5;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="https://stefanini.com/es/wp-content/uploads/sites/4/2022/07/stefanini_logo-1.png" alt="Stefanini Logo">
+            <img src="https://www.five9.com/sites/default/files/2025-02/five9-logo.svg" alt="Five9 Logo">
+        </div>
+        <h2>Formulario de Solicitud - Servicios de Consultoría Stefanini</h2>
+        <form id="formulario">
+            <label for="nombre">Nombre completo</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="email">Correo electrónico</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="empresa">Empresa</label>
+            <input type="text" id="empresa" name="empresa">
+
+            <label for="pais">País</label>
+            <input type="text" id="pais" name="pais">
+
+            <label for="servicio">Servicio de interés</label>
+            <select id="servicio" name="servicio" required>
+                <option value="">Seleccione uno...</option>
+                <option value="Transformación Digital">Transformación Digital</option>
+                <option value="Gestión del Cambio">Gestión del Cambio</option>
+                <option value="Agilidad e Innovación">Agilidad e Innovación</option>
+                <option value="Modernización de Aplicaciones">Modernización de Aplicaciones</option>
+                <option value="Migración y Gestión de la Nube">Migración y Gestión de la Nube</option>
+                <option value="Ciberseguridad">Ciberseguridad</option>
+                <option value="Data & Analytics">Data & Analytics</option>
+                <option value="Servicios BPO / Operaciones">Servicios BPO / Operaciones</option>
+            </select>
+
+            <label for="mensaje">Descripción de necesidades específicas</label>
+            <textarea id="mensaje" name="mensaje" rows="4" placeholder="Describe brevemente tu requerimiento"></textarea>
+
+            <button type="button" onclick="crearCaso()">Crear Caso</button>
+        </form>
+    </div>
+    <script>
+        function crearCaso() {
+            const email = document.getElementById('email').value;
+            const nombre = document.getElementById('nombre').value;
+            const empresa = document.getElementById('empresa').value;
+            const pais = document.getElementById('pais').value;
+            const servicio = document.getElementById('servicio').value;
+            const mensaje = document.getElementById('mensaje').value;
+
+            const data = {
+                description: mensaje,
+                subject: `PRUEBA: Creación Caso - ${servicio} Stefanini/Freshdesk`,
+                email: email,
+                priority: 4,
+                status: 2
+            };
+
+            fetch("https://grupoits.freshdesk.com/api/v2/tickets", {
+                method: "POST",
+                headers: {
+                    "Authorization": "Basic NEZUSFFLak1FeFV4cHFEN1BJWQ==",
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify(data)
+            })
+            .then(response => {
+                if (response.ok) {
+                    alert("El caso fue creado exitosamente.");
+                    document.getElementById("formulario").reset();
+                } else {
+                    alert("Error al crear el caso. Intente nuevamente.");
+                }
+            })
+            .catch(error => {
+                console.error("Error:", error);
+                alert("Error al crear el caso. Revise la consola para más detalles.");
+            });
+        }
+    </script>
+</body>
+</html>
