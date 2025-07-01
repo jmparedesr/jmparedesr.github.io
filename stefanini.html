@@ -96,44 +96,46 @@
             <button type="button" onclick="crearCaso()">Crear Caso</button>
         </form>
     </div>
-    <script>
-        function crearCaso() {
-            const email = document.getElementById('email').value;
-            const nombre = document.getElementById('nombre').value;
-            const empresa = document.getElementById('empresa').value;
-            const pais = document.getElementById('pais').value;
-            const servicio = document.getElementById('servicio').value;
-            const mensaje = document.getElementById('mensaje').value;
+   <script>
+    function crearCaso() {
+        const email = document.getElementById('email').value;
+        const nombre = document.getElementById('nombre').value;
+        const empresa = document.getElementById('empresa').value;
+        const pais = document.getElementById('pais').value;
+        const servicio = document.getElementById('servicio').value;
+        const mensaje = document.getElementById('mensaje').value;
 
-            const data = {
-                description: mensaje,
-                subject: `PRUEBA: Creación Caso - ${servicio} Stefanini/Freshdesk`,
-                email: email,
-                priority: 4,
-                status: 2
-            };
+        const data = {
+            description: mensaje,
+            subject: `PRUEBA: Creación Caso - ${servicio} Stefanini/Freshdesk`,
+            email: email,
+            priority: 4,
+            status: 2
+        };
 
-            fetch("https://grupoits.freshdesk.com/api/v2/tickets", {
-                method: "POST",
-                headers: {
-                    "Authorization": "Basic NEZUSFFLak1FeFV4cHFEN1BJWQ==",
-                    "Content-Type": "application/json"
-                },
-                body: JSON.stringify(data)
-            })
-            .then(response => {
-                if (response.ok) {
-                    alert("El caso fue creado exitosamente.");
-                    document.getElementById("formulario").reset();
-                } else {
-                    alert("Error al crear el caso. Intente nuevamente.");
-                }
-            })
-            .catch(error => {
-                console.error("Error:", error);
-                alert("Error al crear el caso. Revise la consola para más detalles.");
-            });
-        }
-    </script>
+        fetch("https://grupoits.freshdesk.com/api/v2/tickets", {
+            method: "POST",
+            headers: {
+                "Authorization": "Basic NEZUSFFLak1FeFV4cHFEN1BJWQ==", // Reemplaza si es sensible
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(data)
+        })
+        .then(response => {
+            if (!response.ok) {
+                throw new Error("Error en la creación del caso");
+            }
+            return response.json(); // Aquí obtenemos el cuerpo con el ID del caso
+        })
+        .then(ticket => {
+            alert(`✅ Caso creado exitosamente. Número de caso: ${ticket.id}`);
+            document.getElementById("formulario").reset();
+        })
+        .catch(error => {
+            console.error("Error:", error);
+            alert("❌ Error al crear el caso. Revise la consola para más detalles.");
+        });
+    }
+</script>
 </body>
 </html>
